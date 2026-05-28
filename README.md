@@ -7,9 +7,13 @@ sudo docker-compose up -d
 
 # Войти в докер(выйти ctr+D)
 sudo docker exec -it coworking_postgres psql -U admin -d BD
+
 SELECT COUNT(*) FROM BOOKING;
+
 \q
+
 \dt --all bd
+
 
 --4 лаба
 \timing on --включить замер времени
