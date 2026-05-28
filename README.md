@@ -32,16 +32,25 @@ Parallel Seq Scan	Читает таблицу в несколько потоко
 -- 5 lab
 # Из папки api (там где main.py) 
 cd ~/Projects/BD/bd_4/api
+
 python3 -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
-sudo kill -9 67893 67895
+
+sudo kill -9 67893 67895 --если надо убить
+
 http://localhost:8000/docs
 
 Ctrl + C   -- остановочка
 
 --все ковроки
+
 http://localhost:8000/coworkings
+
+
 --все места
+
 http://localhost:8000/spaces
 
+
 http://localhost:8000/bookings?page=1&limit=10
+
 http://localhost:8000/bookings?limit=10&СТАТУС=активно&ВРЕМЯ_НАЧАЛА>=2026-05-20
