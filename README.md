@@ -2,6 +2,7 @@ cd ~/Projects/BD/bd_4
 
 # Пересоздать базу с нуля (очистить всё)
 sudo docker-compose down -v
+
 sudo docker-compose up -d
 
 # Войти в докер(выйти ctr+D)
